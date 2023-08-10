@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    
+    <header>
+
+        <h1>Formulario!! Responder todas las preguntas</h1>
+        <h2 id = "contadorp">Le quedan 30 segundos</h2>
+    </header>
+    <form action="" id="formulario">
+    <div>
+        
+        <div>
+            <label>1. Dame el nombre de una fruta</label>
+            <input id="preg1" type="text" required minlength="5"></input>
+        </div>
+        <div>
+            <label>2. Dame el nombre de una verdura</label>
+            <input id="preg2" type="text" required minlength="5"></input>
+        </div>
+        <div>
+            <label>3. Dime el tipo de un animal</label>
+            <input id="preg3" type="text" required minlength="5"></input>
+        </div>
+        <div>
+            <label>4. Dame el nombre de un deporte</label>
+            <input id="preg4" type="text" required minlength="5"></input>
+        </div>
+        <div>
+            <label>5.Dame el nombre de un color</label>
+            <input id="preg5" type="text" required minlength="5"></input>
+        </div>
+    </div>
+    <button type="submit" value="Submit" id="enviar" onclick="btnenviar()" disabled>enviar</button>
+</form>
+    <div>
+        <button onclick="Empezar()" >Empezar</button>
+    </div>
+    <div>
+        <button id="Reintentar" onclick="reintentar()">Reintentar</button>
+    </div>
+</body>
+</html>
